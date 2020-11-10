@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="148.0" layoutY="34.0" prefHeight="54.0" prefWidth="344.0" style="&#10;" text="Enter credentials for update category" textAlignment="CENTER" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TextField fx:id="id" layoutX="205.0" layoutY="94.0" prefHeight="54.0" prefWidth="232.0" promptText="id" />
+            <TextField fx:id="name" layoutX="205.0" layoutY="167.0" prefHeight="54.0" prefWidth="232.0" promptText="new name" />
+            <Button layoutX="176.0" layoutY="250.0" mnemonicParsing="false" onAction="#updateCategory" prefHeight="27.0" prefWidth="101.0" text="OK" textFill="#838a00" />
+            <Button layoutX="366.0" layoutY="250.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="101.0" text="Cancel" textFill="#c60b0b" />
+            <Label fx:id="message" layoutX="86.0" layoutY="303.0" prefHeight="54.0" prefWidth="457.0" textFill="#038301">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

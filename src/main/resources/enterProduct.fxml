@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProductController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="235.0" layoutY="33.0" style="&#10;" text="Enter credentials" textAlignment="CENTER" textFill="#070225" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TextField fx:id="id" layoutX="201.0" layoutY="66.0" prefHeight="43.0" prefWidth="213.0" promptText="id" />
+            <TextField fx:id="name" layoutX="201.0" layoutY="131.0" prefHeight="43.0" prefWidth="213.0" promptText="name" />
+            <Button layoutX="216.0" layoutY="292.0" mnemonicParsing="false" onAction="#createProduct" prefHeight="27.0" prefWidth="69.0" text="OK" />
+            <Button layoutX="329.0" layoutY="292.0" mnemonicParsing="false" onAction="#logout" text="CANCEL" />
+            <Label fx:id="message" layoutX="123.0" layoutY="211.0" prefHeight="43.0" prefWidth="394.0" textAlignment="CENTER" textFill="#02d01d">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font></Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

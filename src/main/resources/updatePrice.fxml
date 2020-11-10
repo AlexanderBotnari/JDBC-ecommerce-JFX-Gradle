@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PriceController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="144.0" layoutY="60.0" prefHeight="23.0" prefWidth="321.0" style="&#10;" text="UPDATE PRICE ON DATA BASE" textAlignment="CENTER" textFill="#221f1f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TextField fx:id="id" layoutX="155.0" layoutY="111.0" prefHeight="49.0" prefWidth="288.0" promptText="id" />
+            <Button layoutX="196.0" layoutY="261.0" mnemonicParsing="false" onAction="#updatePrice" prefHeight="27.0" prefWidth="61.0" text="OK" />
+            <Button layoutX="339.0" layoutY="261.0" mnemonicParsing="false" onAction="#logout" text="Cancel" />
+            <Label fx:id="message" layoutX="155.0" layoutY="305.0" prefHeight="49.0" prefWidth="388.0" textFill="#078d07">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount" layoutX="155.0" layoutY="173.0" prefHeight="49.0" prefWidth="288.0" promptText="new amount" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
